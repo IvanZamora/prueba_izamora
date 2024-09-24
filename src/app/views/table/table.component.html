@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="search">
+    <input type="text">
+  </div>
+  <Table >
+    <tr>
+      <th *ngFor="let header of displayColumns">{{header}}</th>
+    </tr>
+    <tr *ngFor="let result of results">
+      <td>{{result.name}}</td>
+      <td>{{result.height}}</td>
+      <td>{{result.eye_color}}</td>
+      <td>{{result.created | date: 'dd/MM/yyyy' }}</td>
+    </tr>
+  </Table>
+</div>
